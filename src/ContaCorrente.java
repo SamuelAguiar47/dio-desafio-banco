@@ -4,9 +4,12 @@ public class ContaCorrente extends ContaBancaria {
         super(cliente);
     }
 
+    public void imprimirSaldo() {
+        super.imprimirSaldo("Corrente");
+    }
+
     public void imprimirExtrato() {
-        System.out.println("=== Extrato Conta Corrente ===");
-        super.imprimirInfosComuns();
+        super.imprimirExtrato("Corrente");
     }
     
 }

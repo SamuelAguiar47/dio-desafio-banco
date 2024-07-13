@@ -4,8 +4,11 @@ public class ContaPoupanca extends ContaBancaria {
         super(cliente);
     }
 
+    public void imprimirSaldo() {
+        super.imprimirSaldo("Poupança");
+    }
+
     public void imprimirExtrato() {
-        System.out.println("=== Extrato Conta Poupança ===");
-        super.imprimirInfosComuns();
+        super.imprimirExtrato("Poupança");
     }
 }
